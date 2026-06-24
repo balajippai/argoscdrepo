@@ -8,7 +8,7 @@ metadata:
         description: This is my first deployment
         kubernetes.io/change-cause: "http to nginx"
 spec:
-    replicas: 2
+    replicas: 1
     selector:
         matchLabels:
             app: mydep
