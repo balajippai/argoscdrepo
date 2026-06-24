@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: deploy1
+    namespace: balaji
+    annotations:
+        description: This is my first deployment
+        kubernetes.io/change-cause: "http to nginx"
+spec:
+    replicas: 3
+    selector:
+        matchLabels:
+            app: mydep
+    template:
+        metadata:
+            labels:
+                app: mydep
+        spec:
+            containers:
+                - name: c1
+                  image: nginx
