@@ -19,4 +19,4 @@ spec:
         spec:
             containers:
                 - name: c1
-                  image: nginx
+                  image: balajippai/task-nginx:83c84751dd141b5d23965874d2105bb6563adcf0
